@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hair Spa</title>
+    <title>Mark Removal</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/CSS/hairSpa.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Grechen+Fuemen&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="assets/CSS/manicure.css" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap"
       rel="stylesheet"
@@ -21,24 +19,22 @@
       .hero-section {
         position: relative;
       }
-
       .hero-quote {
         position: absolute;
-        padding: 20px;
         top: 50px;
         left: 50px;
-        width: 50%;
+        background-color: rgb(244, 142, 52);
+        padding: 1rem;
         color: white;
         z-index: 10;
-        background-color: rgb(244, 142, 52);
       }
-
-      @media (max-width: 767.98px) {
+      @media (max-width: 768px) {
         .hero-quote {
-          font-size: 1.2rem;
-          top: 10%;
-          left: 10%;
-          width: 80%;
+          font-size: 0.9rem;
+          top: auto;
+          left: auto;
+          bottom: 20%;
+          width: auto;
         }
       }
     </style>
@@ -94,166 +90,91 @@
       </div>
     </nav>
 
-    <section>
-      <div class="main-container">
-        <div class="left-section">
-          <h3 style="margin-left: 60px; padding: 10px; font-size: 2.1rem; background-color: #f69337; color: white; font-family: 'Charis SIL', serif;">"Beauty attracts the eye, <br>but personality captures the heart ❤ "</h3>
-          <h2>BOOK YOUR APPOINTMENT NOW</h2>
+    <section class="container-fluid " style="background-color: #F1BA88;">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <h3 class="text-light mx-5 p-2" style="background-color: #f28926; width: 70%;">"Be Your Own Kind of beautiful 🌸"</h3>
+          <h2 class="fw-bold mx-5 mt-5">BOOK YOUR APPOINTMENT NOW</h2>
         </div>
-        <!-- <img  style="margin-right: 15%;" src="images/Hair spa animation image.png" alt="pedicure" />  -->
-        <div class="right-section">
-          <img src="images/Mark removal animation image.png" alt="pedicure" />
+        <div class="col-md-6 text-center mt-5">
+          <img src="images/Mark removal animation image.png" alt="Manicure" class="img-fluid" />
         </div>
       </div>
     </section>
 
-    <section class="service-section">
-        <div class="service-intro">
-          <p><strong>Our services / Mark Removal</strong></p>
-          <p>
-            "At Anu Makeover, we're passionate about beauty and dedicated to providing an exceptional experience.
-            Our team of highly trained experts is committed to staying on top of the latest trends and techniques to bring you the best in hairstyling, skincare, and makeup.
-            We believe in creating a luxurious and indulgent atmosphere where you can relax and feel pampered.
-            Our mission is to help you look and feel your best, and we are proud to be a part of your beauty journey."
-          </p>
+    <section class="container mb-5">
+      <div class="text-center mb-4">
+        <h5 class="text-uppercase fs-4 mt-3" >Our Services / <strong>Mark Removal</strong> </h5>
+        <p class="text-black fs-3">
+          "At Anu Makeover, we're passionate about beauty and dedicated to providing an exceptional experience. Our team of highly trained experts is committed to staying on top of the latest trends and techniques to bring you the best in hairstyling, skincare, and makeup. We believe in creating a luxurious and indulgent atmosphere where you can relax and feel pampered."
+        </p>
+      </div>
+
+      <h2 class="text-center text-decoration-underline mb-4">MARK REMOVAL</h2>
+
+      <div class=" mx-auto " style="max-width: 800px; border: 2px solid black; padding: 30px;">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6">
+            <img src="images/mark removal image.png" class="img-fluid rounded-start" alt="Manicure Service" />
+          </div>
+          <div class="col-md-6 p-4">
+            <p>Revitalize your hands with our detailing Mark Removal services</p>
+            <p class="text-danger fw-semibold">Classic Mark Removal: ₹450 only</p>
+            <a href="bookingPage.html" class="btn fw-bold" style="background-color: #f28926; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+              BOOK NOW
+            </a>
+            
+          </div>
         </div>
-        <h2 style="text-decoration: underline; padding: 20px;">MARK REMOVAL</h2>
-        <div class="manicure-box">
-          
-          <div class="manicure-content">
-            <img src="images/mark removal image.png" alt="pedicure Service" />
-            <div class="manicure-details">
-              <p>Revitalize your hands with our detailing Mark Removal services</p>
-              <p class="offer">Mark Removal: Rs 599 only</p>
-              <br>
-              <button class="book-btn">BOOK NOW</button>
+        <div class=" p-lg-5 bg-light mx-lg-5 text-uppercase fw-bold" style="margin-left: 30%;">Hair Spa</div>
+      </div>
+    </section>
+
+    <footer class="text-dark py-5" style="background-color: #F1BA88;">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <div class="d-flex align-items-center mb-3">
+              <img src="images/Anu's makeover logo.png" alt="Logo" height="50" class="me-3" style="mix-blend-mode: multiply;" />
+              <h6 class="fw-bold mb-0">Anu Makeovers</h6>
             </div>
+            <p>123, Railway Feeder Road, Mullai Nagar, Sankaran Kovil - 627756.</p>
+            <img src="images/social media logos.png" alt="Social Media" class="img-fluid" />
           </div>
-          <p class="manicure-label">Mark Removal</p>
-        </div>
-      </section>
-      
 
-    <!-- Footer -->
-    <footer
-      style="
-        background-color: #f1ba88;
-        margin-top: 20px;
-        padding: 40px 20px;
-        color: #333;
-      "
-    >
-      <div
-        class="container"
-        style="
-          max-width: 1200px;
-          margin: 0 auto;
-          display: flex;
-          justify-content: space-evenly;
-          gap: 10px;
-          flex-wrap: wrap;
-        "
-      >
-        <div style="flex: 1 1 30%; min-width: 250px">
-          <div style="display: flex; align-items: center; margin-bottom: 15px">
-            <img
-              src="images/Anu's makeover logo.png"
-              style="mix-blend-mode: multiply; margin-right: 15px"
-              alt="Logo"
-              height="50"
-            />
-            <h6 style="margin: 0; font-weight: bold; color: #000">
-              Anu Makeovers
-            </h6>
+          <div class="col-md-2">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+              <li><a href="ourServices.html" class="text-dark text-decoration-none">Our Services</a></li>
+              <li><a href="aboutUs.html" class="text-dark text-decoration-none">About Us</a></li>
+            </ul>
           </div>
-          <p style="font-size: 1rem">
-            123, Railway Feeder Road,<br />Mullai Nagar, Sankaran Kovil -
-            627756.
-          </p>
-          <div style="margin-top: 15px">
-            <img src="images/social media logos.png" alt="Social Media Icons" />
+
+          <div class="col-md-3">
+            <h6 class="fw-bold">Our Packages</h6>
+            <ul class="list-unstyled">
+              <li><a href="silverPackages.html" class="text-dark text-decoration-none">Silver Package</a></li>
+              <li><a href="goldPackage.html" class="text-dark text-decoration-none">Gold Package</a></li>
+              <li><a href="diamondPackage.html" class="text-dark text-decoration-none">Diamond Package</a></li>
+            </ul>
           </div>
-        </div>
 
-        <div style="flex: 1 1 15%; min-width: 150px">
-          <h6 style="font-weight: bold; color: #000">QUICK LINKS</h6>
-          <ul style="list-style: none; padding: 0">
-            <li>
-              <a href="#" style="color: #333; text-decoration: none">Home</a>
-            </li>
-            <li>
-              <a
-                href="ourServices.html"
-                style="color: #333; text-decoration: none"
-                >Our Services</a
-              >
-            </li>
-            <li>
-              <a href="aboutUs.html" style="color: #333; text-decoration: none"
-                >About Us</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div style="flex: 1 1 20%; min-width: 180px">
-          <h6 style="font-weight: bold; color: #000">OUR PACKAGES</h6>
-          <ul style="list-style: none; padding: 0">
-            <li>
-              <a href="#" style="color: #333; text-decoration: none"
-                >Bridal Package</a
-              >
-            </li>
-            <li>
-              <a href="#" style="color: #333; text-decoration: none"
-                >Party Package</a
-              >
-            </li>
-            <li>
-              <a href="#" style="color: #333; text-decoration: none"
-                >Custom Package</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div style="flex: 1 1 30%; margin-bottom: 20px; min-width: 250px">
-          <h6
-            style="
-              font-weight: bold;
-              color: #000;
-              margin-bottom: 15px;
-              font-size: 1.1rem;
-            "
-          >
-            GET IN TOUCH
-          </h6>
-          <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem">
-            <li style="margin-bottom: 8px">
-              <a href="#" style="color: #333; text-decoration: none"
-                >Contact Us</a
-              >
-            </li>
-            <li style="margin-bottom: 8px">+91 345 24 567 76</li>
-            <li style="margin-bottom: 8px">
-              <a
-                href="mailto:care@anumakeovers.in"
-                style="color: #333; text-decoration: none; font-size: 1rem"
-                >care@anumakeovers.in</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                style="color: #333; text-decoration: none; font-size: 1rem"
-                >www.anumakeovers.com</a
-              >
-            </li>
-          </ul>
+       
+          <div class="col-md-4">
+            <h6 class="fw-bold mb-3">Get In Touch</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+              <li class="mb-2">+91 345 24 567 76</li>
+              <li class="mb-2"><a href="mailto:care@anumakeovers.in" class="text-dark text-decoration-none">care@anumakeovers.in</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">www.anumakeovers.com</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
 
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
