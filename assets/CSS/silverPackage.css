@@ -73,13 +73,15 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+    gap: 10px;
+    
   }
   
   .package-left {
     background-color: #f1ba88;
     padding: 30px 40px;
     border-radius: 20px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     color: white;
     width: 350px;
     height: 510px;
@@ -116,7 +118,7 @@
   .package-right {
     border: 2px solid black;
     padding: 30px 80px;
-    max-width: 850px;
+    max-width: 830px;
     text-align: center;
   }
   
