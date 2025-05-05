@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Options</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        font-family: "Charis Sil", sans-serif;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .payment-box {
+        background-color: #f4dede;
+        padding: 40px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 300px;
+      }
+
+      .payment-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 15px;
+        border: 1px solid #000;
+        background-color: transparent;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .payment-btn:hover {
+        background-color: rgba(243, 195, 195, 0.7);
+      }
+
+      .payment-btn i {
+        margin-right: 10px;
+      }
+
+      .dropdown {
+        font-size: 12px;
+      }
+
+      .upi-options {
+        display: none;
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      .upi-options button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        margin-top: 5px;
+        width: 100%;
+        border: 1px solid #000;
+        background-color: #f3c3c3;
+        cursor: pointer;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+
+      .upi-options button:hover {
+        background-color: rgba(243, 195, 195, 0.7);
+      }
+
+      .circle-icon {
+        width: 15px;
+        height: 15px;
+        background-color: #000;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .selected {
+        background-color: #f3c3c3 !important;
+        font-weight: bold;
+        color: black;
+        justify-content: center !important;
+      }
+
+      .payment-450-btn {
+        display: none;
+        padding: 12px 15px;
+        border: 1px solid #000;
+        background-color: #f3c3c3;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="payment-box">
+        <button class="payment-btn" id="walletBtn">
+          <img src="images/Icon-wallet.png" alt="Wallet Icon" /> Wallets
+        </button>
+
+        <button class="payment-btn" id="upiBtn" onclick="toggleUPI()">
+          <img src="images/icon -UPI.png" alt="UPI Icon" /> UPI
+          <span class="dropdown">&#9662;</span>
+        </button>
+
+        <div id="upiOptions" class="upi-options">
+          <button id="gpayBtn" onclick="showPaymentButton(this)">
+            <span class="circle-icon"></span> Google Pay
+          </button>
+        </div>
+        <button id="payment450Btn" class="payment-450-btn" onclick="redirectToPaymentSuccess()">
+            Payment 450
+          </button>
+
+        <button class="payment-btn" id="netBankingBtn">
+          <img src="images/icon - Net banking.png" alt="Net Banking Icon" />
+          Net Banking
+        </button>
+        <button class="payment-btn" id="creditCardBtn">
+          <img src="images/Icon - credit card.png" alt="Card Icon" />
+          Credit/debit/ATM
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function toggleUPI() {
+        const upiOptions = document.getElementById("upiOptions");
+        
+        if (upiOptions.style.display === "none" || upiOptions.style.display === "") {
+          upiOptions.style.display = "block"; 
+        } else {
+          upiOptions.style.display = "none";
+        }
+      }
+
+      function showPaymentButton(btn) {
+        btn.style.display = 'none';
+
+        const paymentButton = document.getElementById('payment450Btn');
+        paymentButton.style.display = 'block';
+      }
+
+      function redirectToPaymentSuccess() {
+        window.location.href = "paymentSuccessfull.html";
+      }
+    </script>
+  </body>
+</html>
